@@ -9,7 +9,7 @@
 
 int main(void) {
   float grade = scanf("Enter your CMPSC 131 grade:");
-  char *letter;
+  char *letter = "F";
   if(grade >= 93.0){
     letter = "A";
   } else if(grade >= 90.0){
