@@ -6,11 +6,12 @@
 // Breakout: 7
 
 #include <stdio.h>
+#include <readline/readline.h>
+#include <stdlib.h>
 
 int main(void) {
-  printf("Enter your CMPSC 131 grade: ");
-  float grade; 
-  scanf("%f", &grade);
+  char *g = readline("Enter your CMPSC 131 grade: ");
+  float grade = atof(g); 
   char *letter = "F";
   if(grade >= 93.0){
     letter = "A";
